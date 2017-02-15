@@ -1,0 +1,31 @@
+<html>
+<body>
+    <canvas id="canvas1" width="500" height="300" style= "background: #001E62;"></canvas>
+<script>
+
+function draw(){
+    
+    var c = document.getElementById("canvas1");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(250, 150, 100, 0, 2 * Math.PI);
+    ctx.fillStyle = "#D50032";
+   console.log("hi"); ctx.fill();
+    ctx.stroke();
+    ctx.font = "100px Helvetica";
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fillText("AT",190,175);
+}
+function clear(){
+    var c = document.getElementById("canvas1");
+    var ctx = c.getContext("2d");
+    ctx.clearRect(0, 0, 500, 300);
+}
+</script>
+
+
+</body>
+</html>
+
+
+
